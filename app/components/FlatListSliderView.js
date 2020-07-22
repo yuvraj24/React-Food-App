@@ -8,7 +8,7 @@ import IndicatorView from './IndicatorView';
 
 const baseStyle = createStyles();
 
-const FlatListSliderView = ({recipe}) => {
+const FlatListSliderView = ({recipe, isRestaurant = false}) => {
   const [position, setPosition] = useState(0);
 
   // const handleScroll = (event) => {
@@ -43,14 +43,17 @@ const FlatListSliderView = ({recipe}) => {
         // onScroll={(event) => handleScroll(event)}
         onViewableItemsChanged={onViewRef.current}
         viewabilityConfig={viewConfigRef.current}
-        data={Helper.HomeRecipesList}
+        data={isRestaurant ? Helper.RestaurantList : Helper.HomeRecipesList}
         keyExtractor={(item, index) => index.toString()}
         showsVerticalScrollIndicator={false}
         renderItem={({item, index}) => {
           return <DetailImageView item={item} />;
         }}
       />
-      <IndicatorView list={Helper.HomeRecipesList} position={position} />
+      <IndicatorView
+        list={isRestaurant ? Helper.RestaurantList : Helper.HomeRecipesList}
+        position={position}
+      />
       <FoodTextView
         style={[baseStyle.textBigTitleStyle, viewStyle.positionStyle]}
         text={recipe && recipe.title}

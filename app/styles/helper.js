@@ -33,10 +33,10 @@ export const HomeRecipes = [
 
 export const HomeRecipesList = [
   {
-    title: 'Morning Smoothies',
-    count: '2 people',
-    time: '10 minutes',
-    image: LIST_IMG_1,
+    title: 'Belgian Waffles',
+    count: '6 people',
+    time: '45 minutes',
+    image: LIST_IMG_3,
   },
   {
     title: 'Fruity Oatmeal',
@@ -45,16 +45,16 @@ export const HomeRecipesList = [
     image: LIST_IMG_2,
   },
   {
-    title: 'Belgian Waffles',
-    count: '6 people',
-    time: '45 minutes',
-    image: LIST_IMG_3,
-  },
-  {
     title: 'French Toast',
     count: '20 people',
     time: '60 minutes',
     image: LIST_IMG_4,
+  },
+  {
+    title: 'Morning Smoothies',
+    count: '2 people',
+    time: '10 minutes',
+    image: LIST_IMG_1,
   },
 ];
 

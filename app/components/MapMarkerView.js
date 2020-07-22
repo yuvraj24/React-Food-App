@@ -5,8 +5,9 @@ import CircleIcon from '../assets/images/icons-circle.png';
 import {Colors, Dimension, Constant} from '../styles';
 import CustomMarkerView from './CustomMarkerView';
 import RNLocation from 'react-native-location';
+import { ACCESS_TOKEN } from '../styles/constants';
 
-MapboxGL.setAccessToken(Constant.ACCESS_TOKEN);
+MapboxGL.setAccessToken("pk.eyJ1IjoieXV2cmFqMjQiLCJhIjoiY2tjdnhmenU5MDhrMjJybW9wZ3RoczBoMiJ9.HEtB-HzQEJ08Gzkx4S5OLg");
 
 class MapMarkerView extends React.Component {
   constructor(props) {
@@ -27,12 +28,12 @@ class MapMarkerView extends React.Component {
   setUpLocation = () => {
     RNLocation.configure({
       distanceFilter: 5.0,
-      desiredAccuracy: {android: 'balancedPowerAccuracy', ios: 'best'},
-      androidProvider: 'auto',
+      // desiredAccuracy: {android: 'balancedPowerAccuracy', ios: 'nearestTenMeters'},
+      // androidProvider: 'auto',
     });
 
     RNLocation.requestPermission({
-      ios: 'always',
+      ios: 'whenInUse',
       android: {
         detail: 'fine',
       },

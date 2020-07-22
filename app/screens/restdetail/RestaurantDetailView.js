@@ -10,6 +10,7 @@ import MapMarkerView from '../../components/MapMarkerView';
 import {Card, CardItem, Content} from 'native-base';
 import FoodTextView from '../../components/FoodTextView';
 import MakeReservationView from './MakeReservationView';
+import FlatListSliderView from '../../components/FlatListSliderView';
 
 const baseStyle = createStyles();
 
@@ -34,8 +35,8 @@ const RestaurantDetailView = ({navigation, route}) => {
   return (
     <ScrollView bounces={false}>
       <View style={[baseStyle.container, [{backgroundColor: Colors.GREY}]]}>
-        <DetailImageView item={restaurant} />
-
+        {/* <DetailImageView item={restaurant} /> */}
+        <FlatListSliderView recipe={restaurant} isRestaurant/>
         <View style={viewStyle.bottomContainer}>
           <MoreRestaurantInfoView item={restaurant} />
           <View>
