@@ -8,14 +8,14 @@ React-Food-App is a sample UI Design-Kit implementation build in React Native fo
 
 ## Recipes
 
-| **Login** | **Register** | **Home** | **Chat Room** | 
+| **** | **** | **** | **** | 
 | :-----------: | :---------: | :----------: | :----------: |
 | ![](./screenshots/recipe1.png) | ![](./screenshots/recipe2.png) | ![](./screenshots/recipe3.png) | ![](./screenshots/recipe4.png) | 
 <br>
 
 ## Restaurants
 
-| **Login** | **Register** | **Home** |**Home** |
+| **** | **** | **** |**** |
 | :-----------: | :---------: | :----------: | :----------: |
 | ![](./screenshots/restaurant1.png) | ![](./screenshots/restaurant2.png)  | ![](./screenshots/restaurant3.png) |![](./screenshots/restaurant4.png) |
 <br>
