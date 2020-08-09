@@ -32,7 +32,7 @@ const viewStyle = StyleSheet.create({
     margin: '5%',
   },
   activeRadioStyle: {
-     height: 22,
+    height: 22,
     width: 22,
     borderRadius: 11,
     backgroundColor: Colors.APP_COLOR,

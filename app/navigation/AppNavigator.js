@@ -49,8 +49,7 @@ const AppNavigator = () => (
         activeTintColor: Colors.APP_COLOR,
         inactiveTintColor: Colors.DIVIDER_GREY,
         showLabel: false,
-      }}
-      hea>
+      }}>
       <HomeTabStack.Screen name={Constant.RECIPE} component={RecipeStack} />
       <HomeTabStack.Screen
         name={Constant.RESTAURANT}
